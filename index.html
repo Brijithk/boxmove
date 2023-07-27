@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box game</title>
+	<script type="text/javascript">
+    var marginL=0;
+    var marginT=0;
+
+    document.onkeydown = function(event) {
+        switch (event.keyCode) {
+           case 37:
+           marginL-=10;
+                document.getElementById('show').style.marginLeft=marginL+'px';
+              break;
+           case 38:
+              marginT-=10;
+                document.getElementById('show').style.marginTop=marginT+'px';
+              break;
+           case 39:
+                marginL+=10;
+                document.getElementById('show').style.marginLeft=marginL+'px';
+              break;
+           case 40:
+               marginT+=10;
+                document.getElementById('show').style.marginTop=marginT+'px';
+              break;
+        }
+    };
+</script>
+</head>
+<body>
+   
+  	<div id="show" style="height: 20px;width: 20px;background: yellow;margin: 0px"></div>
+  </div>
+</body>
+</html>
